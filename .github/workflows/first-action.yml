@@ -1,0 +1,10 @@
+name: First Workflow
+on: workflow_dispatch   # we can manually trigger this workflow, it is an event that wait for the user to manually start the workflow
+jobs: 
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hellow World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
